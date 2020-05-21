@@ -1,0 +1,18 @@
+<body class="mainBackground">
+  <!-- Primary Page Layout
+ –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+ <!--This div is used for Particles.js https://vincentgarreau.com/particles.js/ -->
+ <div id="particles-js"></div> 
+ <div class="container">
+	<div class="marginTop centerText textColor animate__animated animate__fadeIn">
+		<h1>Welcome</h1>
+  </div>
+	<div id="buttons" class="centerText textColor animate__animated animate__fadeIn">
+		<a class="nonJS" href="aboutme.html">About Me</a>
+		<a class="nonJS" href="links.html">Links</a>
+	</div>
+</div>
+
+  <!-- End Documents
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
