@@ -52,7 +52,7 @@ function buttonRemove()
     /* Change header text according to random number */ 
     if(welcomeMessage < 5)
     {
-        $("h1").text("ようこそう");
+        $("h1").text("ようこそ");
     }
     /* Adding text and classes to the about div */
     addAbout();
