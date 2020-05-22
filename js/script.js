@@ -5,6 +5,8 @@ var aboutMeString = "";
 var linkDivString = "";
 var linkStrings = [4];
 
+var welcomeMessage;
+
 var divAbout;
 var divLinks;
 
@@ -15,7 +17,7 @@ var divLinks;
 
 $(document).ready(function()
 {
-
+    welcomeMessage = Math.floor(Math.random() * 10);
     $.ajax({
         type: "GET",
         url: "xml/aboutme.xml",
@@ -46,7 +48,12 @@ function buttonRemove()
     $("<button id=\"linkButton\">Links</button>").prependTo("#buttons");
     $("<br>").prependTo("#buttons");
     $("<div id=\"divAbout\"></div>").prependTo("#buttons");
-    $("<button id=\"aboutMeButtton\">About Me</button>").prependTo("#buttons");   
+    $("<button id=\"aboutMeButtton\">About Me</button>").prependTo("#buttons");
+    /* Change header text according to random number */ 
+    if(welcomeMessage < 5)
+    {
+        $("h1").text("ようこそう");
+    }
     /* Adding text and classes to the about div */
     addAbout();
     /* Adding links to the divLinks div. */
